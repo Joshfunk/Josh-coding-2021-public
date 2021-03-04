@@ -30,3 +30,28 @@
 
 
     "
+    <!DOCTYPE html>
+<html>
+<body>
+
+<p>This will say Howdy if it's day time, and So long, pardner, if its night:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var hour = new Date().getHours(); 
+  var greeting;
+  if (hour < 18) {
+    greeting = "Howdy!";
+  } else {
+    greeting = "So long, Pardner.";
+  }
+  document.getElementById("demo").innerHTML = greeting;
+}
+</script>
+
+</body>
+</html>
