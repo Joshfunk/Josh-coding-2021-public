@@ -1,0 +1,30 @@
+<h1 align=center> T3A12-Decisions-if-Josh.html</h1>
+<style>
+body {
+  background-color: rgb(134, 238, 212)
+}
+</style>
+
+
+
+<input id="myText01" type=text value=3 > <br><br>
+<input type=button value="Show X" onClick="{
+    x = document.getElementById('myText01').value
+    myTemp = '.......'
+if (x >= 2){myTemp = 'Something'}
+document.getElementById('mySpan01').innerHTML = myTemp}"><br><br>
+<span id="mySpan01">...</span><br><br><br>
+
+
+
+
+Make this > or = to 80 <br>
+<input id="myText02" type=text value=79 > <br><br>
+<input type=button value="Show X" onClick="{
+    x = document.getElementById('myText02').value
+    myTemp = '.......'
+if (x >= 80){myTemp = 'Congrats, you can read!'}
+document.getElementById('mySpan02').innerHTML = myTemp}"><br><br>
+<span id="mySpan02">...</span>
+
+
