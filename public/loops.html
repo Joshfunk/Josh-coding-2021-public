@@ -12,3 +12,19 @@ Version 0.0.3<br>
                                              document.getElementById('mySpan01').innerHTML = myTemp
                                              }"><br><br>
   <span id="mySpan01" ></span><br><br>
+
+  <!-- Basic Loop -->
+<h1><small> Basic Loop </small></h1>
+<input type=text id="myText0" value="3"><br>
+
+<input type=button value="Loop" onclick="{
+    let myTemp = document.getElementById('myText0').value
+    let mySum = ''
+    document.getElementById('myDiv0').innerHTML = ' '
+    for (let myLoop=0;  myLoop < myTemp;  myLoop++){
+        mySum += 'Loop #: '+myLoop+'<br>'
+    }
+    document.getElementById('myDiv0').innerHTML = mySum
+}">
+
+<div id="myDiv0">...</div>
