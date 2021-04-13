@@ -10,11 +10,11 @@
     canvasSize = pipeX = 400;
     c.onclick = () => (birdDY = 9) ;
     setInterval(() => {
-      context.fillStyle = "skyblue";
+      context.fillStyle = "indigo";
       context.fillRect(0,0,canvasSize,canvasSize); // Draw sky
-      birdY -= birdDY -= 0.5; // Gravity
+      birdY -= birdDY -= 0.7; // Gravity
       context.drawImage(bird, birdX, birdY, birdSize * (524/374), birdSize); // Draw bird
-      context.fillStyle = "green";
+      context.fillStyle = "pink";
       pipeX -= 8; // Move pipe
       pipeX < -pipeWidth && // Pipe off screen?
         ((pipeX = canvasSize), (topPipeBottomY = pipeGap * Math.random())); // Reset pipe and randomize gap.
