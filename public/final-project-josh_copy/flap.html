@@ -3,7 +3,7 @@
   <script>
     context = c.getContext("2d");
     const bird = new Image();
-    bird.src = "bird.png";
+    bird.src = "sphere.png";
     birdX = birdDY = score = bestScore = 0;
     interval = birdSize = pipeWidth = topPipeBottomY = 24;
     birdY = pipeGap = 200;
@@ -29,4 +29,4 @@
       ((birdDY = 0), (birdY = 200), (pipeX = canvasSize), (score = 0)); // Bird died
     }, interval)
   </script>
-</body>
+</body>  
