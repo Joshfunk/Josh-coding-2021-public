@@ -1,4 +1,4 @@
-<body style="height: 100vh; background: #111; text-align: center;touch-action: manipulation;">
+<body style="height: 100vh; background: rgb(243, 223, 157); text-align: center;touch-action: manipulation;">
   <canvas id="c" width="400" height="400"></canvas>
   <script>
     context = c.getContext("2d");
@@ -28,5 +28,13 @@
        || birdY > canvasSize) && // Bird falls off screen
       ((birdDY = 0), (birdY = 200), (pipeX = canvasSize), (score = 0)); // Bird died
     }, interval)
+
   </script>
+
 </body>  
+
+
+
+<b onClick="{
+    location = 'shmindex.html'
+}"><br><br> <br> GO BACK!!!!</b><br>
