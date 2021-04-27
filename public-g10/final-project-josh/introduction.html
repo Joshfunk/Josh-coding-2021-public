@@ -24,7 +24,211 @@ body {
 <br><br><br><br><br>
 <b onClick="{
     mySound1.play()
-}">   <p>=here we Go!</p>
+}">   <p>here we Go!</p>
 
 
 <li><a href="Songs.html" align=center>For real, letsa go.</a>
+
+
+
+
+<br><br><br><br><br>
+
+
+
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<body>
+
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="https://vgmsite.com/soundtracks/minecraft/Minecraft%20-%20Volume%20Alpha%20Cover%20Art.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="https://m.media-amazon.com/images/M/MV5BNTZjZjhlNTQtNTY3OS00ZGE1LTg2MGMtNTI3ZDI5MTJhYzhiXkEyXkFqcGdeQXVyMTg2NzgzMDE@._V1_UY268_CR19,0,182,268_AL_.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="https://steamcdn-a.akamaihd.net/steam/apps/264710/capsule_616x353.jpg?t=1601752684" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="https://cdn.akamai.steamstatic.com/steam/apps/374320/header.jpg?t=1608544497" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/46/Sunset_Overdrive_cover.jpg/220px-Sunset_Overdrive_cover.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="https://howlongtobeat.com/games/Jazzpunk_292x136.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="https://vgmsite.com/soundtracks/minecraft/Minecraft%20-%20Volume%20Alpha%20Cover%20Art.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Minecraft">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://m.media-amazon.com/images/M/MV5BNTZjZjhlNTQtNTY3OS00ZGE1LTg2MGMtNTI3ZDI5MTJhYzhiXkEyXkFqcGdeQXVyMTg2NzgzMDE@._V1_UY268_CR19,0,182,268_AL_.jpg" style="width:100%" onclick="currentSlide(2)" alt="Undertale">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://steamcdn-a.akamaihd.net/steam/apps/264710/capsule_616x353.jpg?t=1601752684" style="width:100%" onclick="currentSlide(3)" alt="Subnautica">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://cdn.akamai.steamstatic.com/steam/apps/374320/header.jpg?t=1608544497" style="width:100%" onclick="currentSlide(4)" alt="Dark Souls (3)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/46/Sunset_Overdrive_cover.jpg/220px-Sunset_Overdrive_cover.jpg" style="width:100%" onclick="currentSlide(5)" alt="Sunset overdrive">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="https://howlongtobeat.com/games/Jazzpunk_292x136.jpg" style="width:100%" onclick="currentSlide(6)" alt="Jazzpunk">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>
