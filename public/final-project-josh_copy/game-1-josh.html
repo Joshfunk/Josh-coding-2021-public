@@ -27,6 +27,21 @@ function myHitOther(my1,my2){
        (top1    <=  bottom2) ){
        return true
    }
+   function myHitOther(my3,my4){
+   left3   = parseInt(document.getElementById(my3).style.left)
+   right3  = left3 + parseInt(document.getElementById(my3).style.width)
+   top3  = parseInt(document.getElementById(my3).style.top)   
+   bottom3 = top3   + parseInt(document.getElementById(my3).style.height)
+   left4   = parseInt(document.getElementById(my4).style.left)
+   right4  = left4 + parseInt(document.getElementById(my4).style.width)
+   top4    = parseInt(document.getElementById(my4).style.top)   
+   bottom4 = top4   + parseInt(document.getElementById(my4).style.height)
+   if ((right3  >=  left4  ) &&      	   
+       (bottom3 >=  top4   ) &&
+       (left3   <=  right4 ) &&
+       (top3    <=  bottom4) ){
+       return true
+   }
 }
 
 
